@@ -98,8 +98,21 @@ li {
 }
 
 section {
-    overflow: hidden;
+    overflow: hidden\9;
     *zoom: 1;
+}
+
+:root section {
+    overflow: visible;
+}
+
+section::after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	height: 0;
+	width: 0;
 }
 
 .title {
