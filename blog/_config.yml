@@ -3,7 +3,7 @@ title: 境界线上的馒头卡
 email: wxt2005@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
     无聊的个人小博客
-baseurl: "/blog/" # the subpath of your site, e.g. /blog/
+baseurl: "/blog" # the subpath of your site, e.g. /blog/
 url: "http://wxt2005.github.io" # the base hostname & protocol for your site
 twitter_username: wxt2005
 github_username:  wxt2005
