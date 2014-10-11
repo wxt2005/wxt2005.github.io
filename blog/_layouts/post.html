@@ -1,0 +1,69 @@
+---
+layout: default
+---
+<div class="container">
+    <div class="row">
+        <h1 class="blog-title">{{ site.title }}</h1>
+        <article>
+            <div class="info">
+                <div class="categories">
+                    分类:
+                    <ul>
+                        {% for category in page.categories %}
+                        <li><a href="/search?cat={{ category }}">{{ category }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="tags">
+                    标签:
+                    <ul>
+                        {% for tag in page.tags %}
+                        <li><a href="/search?tag={{ tag }}">{{ tag }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="comments">
+                    评论:
+                    <span class="count"><a href="{{ page.url }}/#disqus_thread"></a></span>
+                </div>
+                <div class="time-stamp">
+                    <span class="date">{{ page.date | date: "%Y年%-m月%-d日" }}</span>
+                    <span class="time">{{ page.date | date: "%H:%M" }}</span>
+                </div>
+                <div class="big-date">
+                    <span class="day">{{ page.date | date: "%-d" }}</span>
+                    <span class="month">{{ page.date | date: "%b" }}</span>
+                </div>
+            </div>
+            <div class="content">
+                <h1 class="post-title">{{ page.title }}</h1>
+                {{ content }}
+            </div>
+        </article>
+        <div class="control">
+            {% if page.previous != nil %}
+            <div class="previous"><a href="{{ page.previous.url }}">上一篇</a></div>
+            {% else %}
+            <div class="previous disabled"><a href="#">上一篇</a></div>
+            {% endif %}
+            {% if page.next != nil %}
+            <div class="next"><a href="{{ page.next.url }}">下一篇</a></div>
+            {% else %}
+            <div class="next disabled"><a href="#">下一篇</a></div>
+            {% endif %}
+        </div>
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = 'wxtcctv2005'; // required: replace example with your forum shortname
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                })();
+        </script>
+    </div>
+</div>
+

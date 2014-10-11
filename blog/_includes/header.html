@@ -1,0 +1,48 @@
+<header>
+    <div class="image">
+        <div class="avatar"></div>
+        <div class="overlay"></div>
+    </div>
+    <nav class="mini-nav">
+        <ul>
+            <li class="home"><a href="/">首页</a></li>
+            <li class="search drop"><a href="#">搜索</a></li>
+            <li class="category drop"><a href="#">分类</a></li>
+            <li class="tag drop"><a href="#">标签</a></li>
+            <li class="about"><a href="/about.html">关于</a></li>
+        </ul> 
+    </nav>
+    <nav class="main-nav row">
+        <ul class="left">
+            <li class="home"><a href="/">首页</a></li>
+            <li class="tag drop">
+                <a href="#">标签</a>
+                <ul class="drop-menu">
+                    {% if site.tags.size > 0 %}
+                    {% for tag in site.tags %}
+                    <li><a href="/search?tag={{ tag[0] }}">{{ tag[0] }}</a></li>
+                    {% endfor %}
+                    {% else %}
+                    <li style="width:100%;text-align:center;"><a>暂无标签</a></li>
+                    {% endif %}
+                </ul>
+            </li>
+            <li class="category drop">
+                <a href="#">分类</a>
+                <ul class="drop-menu">
+                    {% if site.categories.size > 0 %}
+                    {% for category in site.categories %}
+                    <li><a href="/search?cat={{ category[0] }}">{{ category[0] }}</a></li>
+                    {% endfor %}
+                    {% else %}
+                    <li><a>暂无分类</a></li>
+                    {% endif %}
+                </ul>
+            </li>
+        </ul>
+        <ul class="right">
+            <li class="about"><a href="/about.html">关于</a></li>
+            <li class="search"><form action="/search" method="get"><input type="search" placeholder="搜索文章标题" name="title"></form></li>
+        </ul>
+    </nav>
+</header>
