@@ -73,7 +73,8 @@ img {
 }
 
 a {
-    transition: 0.2s ease;
+    -webkit-transition: 0.2s ease;
+            transition: 0.2s ease;
 }
 
 a, p {
@@ -110,9 +111,8 @@ a:focus, a:hover, a:active {
 
 .main-image img {
     width: 300px;
-    border: 1px solid #5a5a5a;
-    padding: 5px;
     border-radius: 6px;
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.3);
 }
 
 .main-image .context {
