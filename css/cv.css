@@ -199,6 +199,10 @@ footer {
     font-size: 1rem;
 }
 
+footer p {
+    text-align: center;
+}
+
 /*responsive*/
 @media only screen and (min-width: 650px) {
     .cv {
