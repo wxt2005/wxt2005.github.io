@@ -22,6 +22,11 @@ body {
     font-family: "Open Sans", Arial, "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "STHeiti", "WenQuanYi Micro Hei", "SimSun", "宋体", sans-serif;
 }
 
+a {
+    -webkit-transition: color 0.2s ease;
+            transition: color 0.2s ease;
+}
+
 a:link, a:visited {
     color: #6790ce;
     text-decoration: none;
@@ -71,7 +76,7 @@ h3 {
 h4 {
     font-size: 18px;
     font-size: 1.8rem;
-    margin: 0.3em 0 0.3em 0;
+    margin: 0.2em 0 0.2em 0;
 }
 
 h5 {
@@ -79,7 +84,6 @@ h5 {
     font-size: 1.4rem;
     margin: 0.3em 0 0.3em 0;
     padding-left: 0.8em;
-    font-style: italic;
     color: #666;
 }
 
@@ -91,6 +95,7 @@ p, li {
 p {
     padding-left: 1em;
     padding-right: 1em;
+    text-align: justify;
 }
 
 li {
@@ -142,6 +147,7 @@ section::after {
 
 .introduce p {
     text-indent: 2em;
+    padding-left: 1.5em;
 }
 
 .skill li.beginner {
@@ -149,15 +155,21 @@ section::after {
 }
 
 .works h4 {
-    display: inline;
 }
 
 .works h5:first-of-type {
-    margin-top: 1em;
+}
+
+.works h5 {
+    float: left;
 }
 
 .works ul, .skill ul {
     list-style: disc inside;
+}
+
+.works p {
+    clear: both;
 }
 
 .works li {
@@ -245,5 +257,20 @@ footer {
 
     footer {
         display: none;
+    }
+
+    .works h5 {
+        float: none;
+        margin-top: 0.4em;
+        margin-bottom: 0.4em;
+    }
+
+    .works h5 a {
+        border: none;
+    }
+
+    .works h5 a:after {
+        content: ": (" attr(href) ")";
+        border-bottom: 1px solid #000;
     }
 }
