@@ -135,7 +135,7 @@ section::after {
 
 .duration {
     color: #aaa;
-    margin-left: 1em;
+    display: block;
 }
 
 .cv {
@@ -266,6 +266,11 @@ footer p {
         font-size: 16px;
         font-size: 1.6rem;
     }
+
+    .duration {
+        display: inline;
+        margin-left: 1em;
+    }
 }
 
 /*for print*/
@@ -293,8 +298,16 @@ footer p {
         border: none;
     }
 
-    .works h5 a:after {
-        content: ": (" attr(href) ")";
-        border-bottom: 1px solid #000;
+    .duration {
+        display: inline;
+        margin-left: 1em;
+    }
+
+    .duration:after {
+        content: ")";
+    }
+
+    .duration:before {
+        content: "(";
     }
 }
