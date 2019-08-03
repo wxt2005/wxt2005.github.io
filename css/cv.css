@@ -41,8 +41,11 @@ a:active, a:hover {
     color: #a1bae1;
 }
 
-ul {
+ul,
+ol {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 h1, h2, h3, h4, h5 {
@@ -63,14 +66,13 @@ h2 {
 }
 
 h3 {
-    font-size: 20px;
-    font-seiz: 2rem;
+    font-size: 24px;
     border-top: 2px solid #333;
     border-bottom: 1px solid #666;
     padding: 0.4em 0.1em;
     line-height: 1;
     letter-spacing: 0.1em;
-    margin: 1.3em 0 1em 0;
+    margin: 1.3em 0 0.8em 0;
 }
 
 h4 {
@@ -88,18 +90,21 @@ h5 {
 }
 
 p, li {
-    margin-bottom: 0.3em;
     color: #666;
 }
 
 p {
-    padding-left: 1em;
-    padding-right: 1em;
-    text-align: justify;
+    line-height: 1.4;
+    word-break: normal;
+    word-break: break-word;
+    word-wrap: break-word;
+}
+
+p + p {
+    margin-top: 15px;
 }
 
 li {
-    padding-left: 1.5em;
 }
 
 section {
@@ -124,6 +129,15 @@ section::after {
     text-align: center;
 }
 
+.information li + li {
+    margin-top: 6px;
+}
+
+.duration {
+    color: #aaa;
+    margin-left: 1em;
+}
+
 .cv {
     background: #fff;
     min-width: 300px;
@@ -146,8 +160,6 @@ section::after {
 }
 
 .introduce p {
-    text-indent: 2em;
-    padding-left: 1.5em;
 }
 
 .skill li.beginner {
@@ -172,20 +184,28 @@ section::after {
     clear: both;
 }
 
-.works li {
-    padding-top: 0.8em;
+.works > ul,
+.works > ol {
+    list-style: none;
+
 }
+
+.works > ul > li:not(:first-of-type),
+.works > ol > li:not(:first-of-type) {
+    margin-top: 30px;
+}
+
 
 .works li:first-child {
     padding-top: 0;
 }
 
 .works p {
-    margin-top: 0.3em;
+    margin-top: 0.5em;
 }
 
 .works p:first-of-type {
-    margin-top: 1em;
+    margin-top: 0.5em;
 }
 
 footer {
