@@ -22,6 +22,11 @@ body {
     font-family: "Open Sans", Arial, "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "STHeiti", "WenQuanYi Micro Hei", "SimSun", "宋体", sans-serif;
 }
 
+blockquote {
+    margin: 0;
+    font-style: italic;
+}
+
 a {
     -webkit-transition: color 0.2s ease;
             transition: color 0.2s ease;
@@ -72,20 +77,18 @@ h3 {
     padding: 0.4em 0.1em;
     line-height: 1;
     letter-spacing: 0.1em;
-    margin: 1.3em 0 0.8em 0;
+    margin: 0.8em 0 0.8em 0;
 }
 
 h4 {
-    font-size: 18px;
-    font-size: 1.8rem;
+    font-size: 22px;
+    font-size: 2.2rem;
     margin: 0.2em 0 0.2em 0;
 }
 
 h5 {
     font-size: 14px;
     font-size: 1.4rem;
-    margin: 0.3em 0 0.3em 0;
-    padding-left: 0.8em;
     color: #666;
 }
 
@@ -93,14 +96,16 @@ p, li {
     color: #666;
 }
 
-p {
+p,
+blockquote {
     line-height: 1.4;
     word-break: normal;
     word-break: break-word;
     word-wrap: break-word;
 }
 
-p + p {
+p + p,
+blockquote + p {
     margin-top: 15px;
 }
 
@@ -129,7 +134,13 @@ section::after {
     text-align: center;
 }
 
-.information li + li {
+.information li {
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+}
+
+.information li:nth-child(n + 3) {
     margin-top: 6px;
 }
 
@@ -152,7 +163,12 @@ section::after {
 
 .profile li, .skill li {
     float: left;
-    min-width: 45%;
+    min-width: 32%;
+}
+
+.skill > ul {
+    list-style: disc;
+    list-style-position: inside;
 }
 
 .skill li {
@@ -177,11 +193,6 @@ section::after {
 }
 
 .works h5 {
-    float: left;
-}
-
-.works ul, .skill ul {
-    list-style: disc inside;
 }
 
 .works p {
@@ -210,6 +221,37 @@ section::after {
 
 .works p:first-of-type {
     margin-top: 0.5em;
+}
+
+.projects {
+    list-style: none;
+}
+
+.projects h5 {
+    font-size: 18px;
+    font-size: 1.8rem;
+    color: #000;
+}
+
+.projects li + li {
+    margin-top: 1rem;
+}
+
+.projects li:first-of-type {
+    margin-top: 8px;
+}
+
+.projects p + p {
+    margin-top: 4px;
+}
+
+.projects p:first-of-type {
+    margin-top: 4px;
+}
+
+.education > ul {
+    list-style: disc;
+    list-style-position: inside;
 }
 
 footer {
@@ -266,7 +308,6 @@ footer p {
     }
 
     h5 {
-        padding-left: 1em;
         font-size: 16px;
         font-size: 1.6rem;
     }
@@ -279,6 +320,19 @@ footer p {
 
 /*for print*/
 @media print {
+    @page  
+    { 
+        size: auto;   /* auto is the initial value */ 
+
+        /* this affects the margin in the printer settings */ 
+        margin: 4mm 4mm;
+    } 
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
     * {
         background: transparent !important;
         color: #000 !important;
