@@ -249,6 +249,7 @@ section::after {
     margin-top: 4px;
 }
 
+.certificate > ul,
 .education > ul {
     list-style: disc;
     list-style-position: inside;
@@ -325,7 +326,7 @@ footer p {
         size: auto;   /* auto is the initial value */ 
 
         /* this affects the margin in the printer settings */ 
-        margin: 4mm 4mm;
+        margin: 4mm 4mm 16mm;
     } 
 
     body {
