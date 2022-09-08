@@ -1,204 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-        <meta name="renderer" content="webkit">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Wang Xiaotao's resume, senior front-end developer">
-        <meta name="keywords" content="resume, front-end">
-        <meta name="author" content="@wxt2005">
-        <title>Wang Xiaotao's resume</title>
-        <link rel="stylesheet" href="./css/cv.css">
-        <!--[if lt IE 9]>
-            <script type="text/javascript">
-               (function() {
-                 var e = ["section", "footer"];
-                 for (var i = 0, l = e.length; i < l; i++) {
-                     document.createElement(e[i])
-                 }
-             })();
-            </script>
-        <![endif]-->
-    </head>
-
-    <body>
-        <div class="cv">
-            <div class="title">
-                <h1>Wang Xiaotao</h1>
-                <h2>&lt;Senior Front-End Engineer&gt;</h2>
-            </div>
-            <section class="information">
-                <h3>Profile</h3>
-                <ul>
-                    <li>Email: <a href="m&#97;i&#108;t&#111;:&#119;xt&#50;&#48;&#48;&#53;@gma&#105;l&#46;&#99;&#111;&#109;" title="contact me">wxt2005@gmail.com</a></li>
-                    <li>Location: Hangzhou, Zhejiang, China mainland</li>
-                    <li>GitHub: <a href="https://github.com/wxt2005" title="GitHub page" target="_blank" rel="nofollow me noopener noreferrer">https://github.com/wxt2005</a></li>
-                    <li>LinkedIn: <a href="https://www.linkedin.com/in/wxt2005" title="LinkedIn page" target="_blank" rel="nofollow me noopener noreferrer">https://www.linkedin.com/in/wxt2005</a></li>
-                </ul>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Wang Xiaotao's Resume | Senior Frontend Engineer">
+    <meta name="keywords" content="resume, frontend">
+    <meta name="author" content="@wxt2005">
+    <title>Wang Xiaotao's Resume</title>
+    <link rel="stylesheet" href="./cv-eng.css">
+  </head>
+  <body>
+    <div class="cv">
+      <header class="title">
+        <h1 class="title-main">Wang Xiaotao</h1>
+        <p class="title-sub">&lt;Senior Frontend Engineer&gt;</p>
+      </header>
+      <main>
+        <section>
+          <h2>Profile</h2>
+          <dl>
+            <dt>Email</dt>
+            <dd><a href="m&#97;i&#108;t&#111;:&#119;xt&#50;&#48;&#48;&#53;@gma&#105;l&#46;&#99;&#111;&#109;">wxt2005@gmail.com</a></dd>
+            <dt>Location</dt>
+            <dd>Kanagawa, Japan</dd>
+            <dt>GitHub</dt>
+            <dd><a href="https://github.com/wxt2005" target="_blank" rel="nofollow noopener noreferrer">https://github.com/wxt2005</a></dd>
+            <dt>LinkedIn</dt>
+            <dd><a href="https://www.linkedin.com/in/wxt2005" target="_blank" rel="nofollow noopener noreferrer">https://www.linkedin.com/in/wxt2005</a></dd>
+          </dl>
+        </section>
+        <section>
+          <h2>About me</h2>
+          <p>I have 5 years of experience in developing complex web applications, collaborating with both small and large teams, and can pick up new tech stacks whenever it's necessary.</p>
+          <p>Have faith in the Internet, and willing to build products for a better and happier world.</p>
+        </section>
+        <section>
+          <h2>Experience</h2>
+          <section>
+            <h3>Rakuten</h3>
+            <p>December 2020 - Present</p>
+            <p>Tokyo, Japan</p>
+          </section>
+          <section>
+            <h3>Cainiao Network</h3>
+            <p>August 2017 - January 2020</p>
+            <p>Hangzhou, Zhejiang, China</p>
+            <blockquote cite="https://en.wikipedia.org/wiki/Cainiao">Cainiao Smart Logistics Network Limited is a Chinese logistics company launched by Alibaba Group.</blockquote>
+            <section>
+              <h4>Phoenix</h4>
+              <p>A massive operating management system for Cainiao's new subsidiary Danniao.</p>
+              <p>Led a team of four members to support the whole project.</p>
+              <p>Built a multi-entry web application.</p>
+              <p>Introduced React hooks for logic reusing and CSS grid for page layout.</p>
+              <p>Developed a React UI component library based on Antd. Used Storybook for UI development and documentation.</p>
             </section>
-            <section class="introduce">
-                <h3>About me</h3>
-                <p>I have 5 years of experience in developing complex web applications, collaborating with both small and large teams, and can pick up new tech stacks whenever it's necessary.</p>
-                <p>Have faith in the Internet, and willing to build products for a better and happier world.</p>
+            <section>
+              <h4>Poststation Retail / Poststation Group-buying / Poststation Sample-sending</h4>
+              <p>Three E-commerce services for helping Cainiao poststation owners increase profit.</p>
+              <p>Built three single page applications from scratch.</p>
+              <p>Abstracted three separate parts for better maintainability: shopping, payment and order management. All services only have different shopping page, shared the same payment and order management page.</p>
+              <p>Adopted Redux-Observable for clear asynchronous action management.</p>
+              <p>Built payment-related features, introduced Jest for unit testing.</p>
+              <p>Used modular CSS to prevent class name conflict and makes styles easy to maintain.</p>
+              <p>Standardized JavaScript code style by introducing ESLint.</p>
             </section>
-            <section class="works">
-                <h3>Experience</h3>
-                <ul>
-                    <li>
-                        <h4>Cainiao Network<span class="duration">August 2017 - Present</span></h4>
-                        <blockquote cite="https://en.wikipedia.org/wiki/Cainiao">Cainiao Smart Logistics Network Limited is a Chinese logistics company launched by Alibaba Group.</blockquote>
-                        <ul class="projects">
-                                <li>
-                                    <h5>Phoenix</h5>
-                                    <p>A massive operating management system for Cainiao's new subsidiary Danniao.</p>
-                                    <p>Led a team of four members to support the whole project.</p>
-                                    <p>Built a multi-entry web application.</p>
-                                    <p>Introduced React hooks for logic reusing and CSS grid for page layout.</p>
-                                    <p>Developed a React UI component library based on Antd. Used Storybook for UI development and documentation.</p>
-                                </li>
-
-                                <li>
-                                    <h5>Poststation Retail / Poststation Group-buying / Poststation Sample-sending</h5>
-                                    <p>Three E-commerce services for helping Cainiao poststation owners increase profit.</p>
-                                    <p>Built three single page applications from scratch.</p>
-                                    <p>Abstracted three separate parts for better maintainability: shopping, payment and order management. All services only have different shopping page, shared the same payment and order management page.</p>
-                                    <p>Adopted Redux-Observable for clear asynchronous action management.</p>
-                                    <p>Built payment-related features, introduced Jest for unit testing.</p>
-                                    <p>Used modular CSS to prevent class name conflict and makes styles easy to maintain.</p>
-                                    <p>Standardized JavaScript code style by introducing ESLint.</p>
-                                </li>
-
-                                <li>
-                                    <h5>Cainiao Box</h5>
-                                    <p>Cainiao Box is a hardware product for customers to receive packages while not at home.</p>
-                                    <p>Built Cainiao Box Android app from scratch, wrote it with Java.</p>
-                                    <p>Implemented QR scan feature on top of ZXing.</p>
-                                    <p>Implemented Bluetooth communication protocol between Android phone and the box device.</p>
-                                </li>
-
-                                <li>
-                                    <h5>Front-end infrastructure</h5>
-                                    <p>Maintained front-end assets publishing system.</p>
-                                    <p>Developed a Word-to-HTML converting service based on Pandoc.</p>
-                                    <p>Implemented notification feature for the cloud building process.</p>
-                                </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <h4>DXY<span class="duration">October 2014 - August 2017</span></h4>
-                        <blockquote cite="https://en.wikipedia.org/wiki/DXY.cn">DXY is an online community for physicians, health care professionals, pharmacies and facilities.</blockquote>
-                        <ul class="projects">
-                            <li>
-                                <h5>Insight</h5>
-                                <p>Insight is a medicine database targeting Chinese pharmaceutical factories. </p>
-                                <p>The front-end team leader of Insight, led a team of three members.</p>
-                                <p>Refactored Insight from a legacy monolithic PHP codebase to a React + Redux application, leveraging the latest tools such as Webpack.</p>
-                                <p>For preserving the ability to change page layout dynamically, designed a JSON schema for the back-end to control rendering.</p>
-                            </li>
-
-                            <li>
-                                <h5>DXY BBS & DXY App</h5>
-                                <p>DXY BBS is the biggest online forum for medical discussion in China, and DXY App is the iOS/Android version of it.</p>
-                                <p>Refactored DXY BBS from a legacy monolithic Java codebase to a modular jQuery application. Used Gulp for building and Require.js for module loading.</p>
-                                <p>Implemented an editor plugin for annotating uploaded images on top of darkroomjs.</p>
-                                <p>Developed and maintained all post detail pages in DXY app's webview.</p>
-                                <p>Collaborated with native engineers to design JS bridge for communicating between the web page and native app.</p>
-                            </li>
-
-                            <li>
-                                <h5>Front-end infrastructure</h5>
-                                <p>Developed a utility for opening native Apps from mobile web pages. Made use of Custom Scheme in Android, and Universal Link in iOS.</p>
-                                <p>Developed a utility for compressing images before uploading from mobile web pages, in the sake of fast uploading and bandwidth saving.</p>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
+            <section>
+              <h4>Cainiao Box</h4>
+              <p>Cainiao Box is a hardware product for customers to receive packages while not at home.</p>
+              <p>Built Cainiao Box Android app from scratch, wrote it with Java.</p>
+              <p>Implemented QR scan feature on top of ZXing.</p>
+              <p>Implemented Bluetooth communication protocol between Android phone and the box device.</p>
             </section>
-            <section class="works">
-                <h3>Side Projects</h3>
-                <ul>
-                    <li>
-                        <h4>Browser Opener
-                        </h4>
-                        <p>
-                            A Mac app to help you maintain browser preference.
-                        </p>
-                        <p>
-                            As a front-end engineer, I like to use Chrome as a dev tool in daily work, however, my favorite browser in MacOS is Safari. 
-                            So I have developed Browser Opener, which can help you decide which browser to open automatically when you clicked an external link.
-                        </p>
-                        <p>
-                            This application was written in Swift, and could be found on Mac App Store. The Product Hunt page of this project has achieved the 3rd position of release day.
-                        </p>
-                        <p>
-                            Mac App Store Link: <a href="https://apps.apple.com/us/app/browseropener/id1387480496?mt=12"
-                                target="_blank"
-                                rel="nofollow me noopener noreferrer">https://apps.apple.com/us/app/browseropener/id1387480496</a>
-                        </p>
-                        <p>
-                            Product Hunt Page: <a href="https://www.producthunt.com/posts/browseropener" target="_blank"
-                                rel="nofollow me noopener noreferrer">https://www.producthunt.com/posts/browseropener</a>
-                        </p>
-                    </li>
-                    <li>
-                        <h4>Bangumi List</h4>
-                        <p>
-                            A website collecting Japanese anime watch lists.
-                        </p>
-                        <p>
-                            There has been a lot of Japanese anime come to Chinese video websites since 2013. But due to fragmentation of copyrights, it was hard to watch them on
-                            one single website. That's why I started this project.
-                        </p>
-                        <p>
-                            This website is also my playground of front-end technologies. It was first
-                            written in plain HTML tables, and then be refactored to Angular, then jQuery, and finally
-                            React. I'm recently considering making it to a Progress Web Application.
-                        </p>
-                        <p>
-                            Site Link: <a href="https://bgmlist.com" target="_blank"
-                                rel="nofollow me noopener noreferrer">https://bgmlist.com</a>
-                        </p>
-                    </li>
-                </ul>
+            <section>
+              <h4>Front-end infrastructure</h4>
+              <p>Maintained front-end assets publishing system.</p>
+              <p>Developed a Word-to-HTML converting service based on Pandoc.</p>
+              <p>Implemented notification feature for the cloud building process.</p>
             </section>
-            <section class="skill">
-                <h3>Skills</h3>
-                <ul>
-                    <li>JavaScript</li>
-                    <li>HTML</li>
-                    <li>CSS and pre-processors</li>
-                    <li>React + Redux</li>
-                    <li>Vue + Vuex</li>
-                    <li>jQuery</li>
-                    <li>Node.js</li>
-                    <li>Java</li>
-                    <li>Swift</li>
-                </ul>
+          </section>
+          <section>
+            <h3>DXY.cn</h3>
+            <p>October 2014 - August 2017</p>
+            <p>Hangzhou, Zhejiang, China</p>
+            <blockquote cite="https://en.wikipedia.org/wiki/DXY.cn">DXY is an online community for physicians, health care professionals, pharmacies and facilities.</blockquote>
+            <section>
+              <h4>Insight</h4>
+              <p>Insight is a medicine database targeting Chinese pharmaceutical factories. </p>
+              <p>The front-end team leader of Insight, led a team of three members.</p>
+              <p>Refactored Insight from a legacy monolithic PHP codebase to a React + Redux application, leveraging the latest tools such as Webpack.</p>
+              <p>For preserving the ability to change page layout dynamically, designed a JSON schema for the back-end to control rendering.</p>
             </section>
-            <section class="certificate">
-                <h3>Certificate</h3>
-                <ul>
-                    <li>Qualification Certificate of Computer and Software Technology Proficiency - Programmer</li>
-                    <li>Japanese-Language Proficiency Test N2</li>
-                    <li>College English Test CET-6</li>
-                </ul>
-            </section
-            <section class="education">
-                <h3>Education</h3>
-                <ul>
-                    <li>B.E. Civil Engineering -- Zhejiang Shuren University 2009-2013</li>
-                </ul>
+            <section>
+              <h4>DXY BBS & DXY App</h4>
+              <p>DXY BBS is the biggest online forum for medical discussion in China, and DXY App is the iOS/Android version of it.</p>
+              <p>Refactored DXY BBS from a legacy monolithic Java codebase to a modular jQuery application. Used Gulp for building and Require.js for module loading.</p>
+              <p>Implemented an editor plugin for annotating uploaded images on top of darkroomjs.</p>
+              <p>Developed and maintained all post detail pages in DXY app's webview.</p>
+              <p>Collaborated with native engineers to design JS bridge for communicating between the web page and native app.</p>
             </section>
-        </div>
-        <footer>
+            <section>
+              <h4>Front-end infrastructure</h4>
+              <p>Developed a utility for opening native Apps from mobile web pages. Made use of Custom Scheme in Android, and Universal Link in iOS.</p>
+              <p>Developed a utility for compressing images before uploading from mobile web pages, in the sake of fast uploading and bandwidth saving.</p>
+            </section>
+          </section>
+        </section>
+        <section>
+          <h2>Side Projects</h2>
+          <section>
+            <h3>Browser Opener</h3>
+            <p>A Mac app to help you maintain browser preference. </p>
             <p>
-                &copy; 2019 <a href="https://twitter.com/wxt2005/" title="follow me on Twitter">&#64;wxt2005</a>. All
-                Rights Reserved. &#124;
-                <a href="./others/resume-eng.pdf">Download PDF version</a>
+                As a front-end engineer, I like to use Chrome as a dev tool in daily work, however, my favorite browser in MacOS is Safari. 
+                So I have developed Browser Opener, which can help you decide which browser to open automatically when you clicked an external link.
             </p>
-        </footer>
-    </body>
-
+            <p>
+                This application was written in Swift, and could be found on Mac App Store. The Product Hunt page of this project has achieved the 3rd position of release day.
+            </p>
+            <p>
+                Mac App Store Link: <a href="https://apps.apple.com/us/app/browseropener/id1387480496?mt=12"
+                    target="_blank"
+                    rel="nofollow me noopener noreferrer">https://apps.apple.com/us/app/browseropener/id1387480496</a>
+            </p>
+            <p>
+                Product Hunt Page: <a href="https://www.producthunt.com/posts/browseropener" target="_blank"
+                    rel="nofollow me noopener noreferrer">https://www.producthunt.com/posts/browseropener</a>
+            </p>
+          </section>
+          <section>
+            <h3>Reading List</h3>
+            <p></p>
+          </section>
+          <section>
+            <h3>Bangumi List</h3>
+            <p>
+                A website collecting Japanese anime watch lists.
+            </p>
+            <p>
+                There has been a lot of Japanese anime come to Chinese video websites since 2013. But due to fragmentation of copyrights, it was hard to watch them on
+                one single website. That's why I started this project.
+            </p>
+            <p>
+                This website is also my playground of front-end technologies. It was first
+                written in plain HTML tables, and then be refactored to Angular, then jQuery, and finally
+                React. I'm recently considering making it to a Progress Web Application.
+            </p>
+            <p>
+                Site Link: <a href="https://bgmlist.com" target="_blank"
+                    rel="nofollow me noopener noreferrer">https://bgmlist.com</a>
+            </p>
+          </section>
+        </section>
+        <section>
+          <h2>Skills</h2>
+          <ul>
+            <li>JavaScript</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>React</li>
+            <li>Vue</li>
+            <li>Node.js</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Certifications</h2>
+          <ul>
+            <li>JLPT N1</li>
+            <li>TOEIC 950</li>
+            <li>Qualification Certificate of Computer and Software Technology Proficiency - Programmer</li>
+            <li>Qualification Certificate of Computer and Software Technology Proficiency - Software Design Engineer</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Education</h2>
+          <ul>
+            <li>B.E. Civil Engineering -- Zhejiang Shuren University 2009-2013</li>
+          </ul>
+        </section>
+      </main>
+    </div>
+    <footer>
+      <p>
+        &copy; 2022 Wang Xiaotao &#124;
+        <a href="./others/resume-eng.pdf">Download PDF version</a>
+      </p>
+    </footer>
+  </body>
 </html>

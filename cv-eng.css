@@ -1,0 +1,324 @@
+body {
+  background: #eee;
+  color: #333;
+  font-family: -apple-system,BlinkMacSystemFont,Roboto,roboto slab,droid serif,segoe ui,system-ui,Arial,sans-serif;
+  font-size: 16px;
+}
+
+blockquote {
+  margin: 0;
+  font-style: italic;
+}
+
+a {
+  transition: color 0.2s ease;
+}
+
+a:link, a:visited {
+  color: #6790ce;
+  text-decoration: none;
+}
+
+a:focus {
+  outline-offset: 2px;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 400;
+  color: #000;
+}
+
+h2 {
+  font-size: 30px;
+  border-top: 2px solid #333;
+  border-bottom: 1px solid #666;
+  margin: 8px 0;
+  padding:4px 0;
+}
+
+h3 {
+}
+
+h4 {
+    font-size: 22px;
+    font-size: 2.2rem;
+    margin: 0.2em 0 0.2em 0;
+}
+
+h5 {
+    font-size: 14px;
+    font-size: 1.4rem;
+    color: #666;
+}
+
+p, li {
+    color: #666;
+}
+
+p,
+blockquote {
+    line-height: 1.4;
+    word-break: normal;
+    word-break: break-word;
+    word-wrap: break-word;
+}
+
+p + p,
+blockquote + p {
+    margin-top: 15px;
+}
+
+li {
+}
+
+section {
+    overflow: hidden\9;
+    *zoom: 1;
+}
+
+:root section {
+    overflow: visible;
+}
+
+section::after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    height: 0;
+    width: 0;
+}
+
+.title {
+  text-align: center;
+}
+
+.title-main {
+  margin: 8px 0;
+}
+
+.title-sub {
+  color: #555;
+  margin: 8px 0;
+}
+
+.information li {
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+}
+
+.information li:nth-child(n + 3) {
+    margin-top: 6px;
+}
+
+.duration {
+    color: #aaa;
+    display: block;
+}
+
+.cv {
+    background: #fff;
+    min-width: 300px;
+    max-width: 960px;
+    text-align: left;
+    margin: 0 auto;
+    padding: 1em;
+    font-size: 12px;
+    font-size: 1.2rem;
+    box-sizing: border-box;
+}
+
+.profile li, .skill li {
+    float: left;
+    min-width: 32%;
+}
+
+.skill > ul {
+    list-style: disc;
+    list-style-position: inside;
+}
+
+.skill li {
+    box-sizing: border-box;
+}
+
+.skill li.beginner {
+    font-style: italic;
+}
+
+.works:not(:first-of-type) {
+    margin-top: 10px;
+}
+
+
+.works p {
+    clear: both;
+}
+
+.works > ul,
+.works > ol {
+    list-style: none;
+
+}
+
+.works > ul > li:not(:first-of-type),
+.works > ol > li:not(:first-of-type) {
+    margin-top: 30px;
+}
+
+.works li:first-child {
+    padding-top: 0;
+}
+
+.works p {
+    margin-top: 0.5em;
+}
+
+.works p:first-of-type {
+    margin-top: 0.5em;
+}
+
+.projects {
+    list-style: none;
+}
+
+.projects h5 {
+    font-size: 18px;
+    font-size: 1.8rem;
+    color: #000;
+}
+
+.projects li + li {
+    margin-top: 1rem;
+}
+
+.projects li:first-of-type {
+    margin-top: 8px;
+}
+
+.projects p + p {
+    margin-top: 4px;
+}
+
+.projects p:first-of-type {
+    margin-top: 4px;
+}
+
+.certificate > ul,
+.education > ul {
+    list-style: disc;
+    list-style-position: inside;
+}
+
+footer {
+    min-width: 300px;
+    max-width: 960px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    font-size: 10px;
+    font-size: 1rem;
+}
+
+footer p {
+    text-align: center;
+}
+
+/*responsive*/
+@media only screen and (min-width: 650px) {
+    .cv {
+        font-size: 14px;
+        font-size: 1.4rem;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    body {
+        padding: 2em 2em 0 2em;
+    }
+
+    .cv {
+        padding: 2em;
+        border: 5px solid #333;
+        font-size: 16px;
+        font-size: 1.6rem;
+        border-radius: 10px;
+    }
+
+    footer {
+        padding-top: 2em;
+        padding-bottom: 2em;
+        font-size: 16px;
+        font-size: 1.6rem;
+    }
+
+    h5 {
+        font-size: 16px;
+        font-size: 1.6rem;
+    }
+
+    .duration {
+        display: inline;
+        margin-left: 1em;
+    }
+}
+
+/*for print*/
+@media print {
+    @page  
+    { 
+        size: auto;   /* auto is the initial value */ 
+
+        /* this affects the margin in the printer settings */ 
+        margin: 4mm 4mm 16mm;
+    } 
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    * {
+        background: transparent !important;
+        color: #000 !important;
+    }
+
+    a:link, a:visited {
+        border-bottom: 1px solid #000;
+    }
+
+    footer {
+        display: none;
+    }
+
+    .works h5 {
+        float: none;
+        margin-top: 0.4em;
+        margin-bottom: 0.4em;
+    }
+
+    .works h5 a {
+        border: none;
+    }
+
+    .duration {
+        display: inline;
+        margin-left: 1em;
+    }
+
+    .duration:after {
+        content: ")";
+    }
+
+    .duration:before {
+        content: "(";
+    }
+}
