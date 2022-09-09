@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./cv-eng.css">
   </head>
   <body>
-    <div class="cv">
+    <div class="box">
       <header class="title">
         <h1 class="title-main">Wang Xiaotao</h1>
         <p class="title-sub">&lt;Senior Front-end Engineer&gt;</p>
@@ -32,16 +32,18 @@
           </dl>
         </section>
         <section>
-          <h2>About Me</h2>
-          <p>Versatile front-end engineer with over 7 years of experience in the development of complex web applications.</p>
+          <h2>About me</h2>
+          <p>I'm a self-driven front-end engineer with over 7 years of experience in the development of complex web applications.</p>
           <p>I have a passion for better user experience and constantly chasing the new possibility of front-end technologies.</p>
         </section>
-        <section>
+        <section class="experience">
           <h2>Experience</h2>
           <section>
             <h3>Rakuten</h3>
-            <p>December 2020 - Present</p>
-            <p>Tokyo, Japan</p>
+            <div class="experience-meta">
+              <p>December 2020 - Present</p>
+              <p>Tokyo, Japan</p>
+            </div>
             <ul>
               <li>Develop and maintaine Golf booking service pages using Vue and Nuxt.js.</li>
               <li>Migrate old PHP pages to new application.</li>
@@ -57,7 +59,6 @@
             <h3>Cainiao Network</h3>
             <p>August 2017 - January 2020</p>
             <p>Hangzhou, Zhejiang, China</p>
-            <blockquote cite="https://en.wikipedia.org/wiki/Cainiao">Cainiao Smart Logistics Network Limited is a Chinese logistics company launched by Alibaba Group.</blockquote>
             <ul>
               <li>Built single-page applications using React for the company's customer-oriented services.</li>
               <li>Created team's front-end scaffold and updated it to follow industry best practices.</li>
@@ -66,14 +67,13 @@
               <li>Worked closely with designers and created UI component library.</li>
               <li>Maintained front-end deployment system which can deploy applications by only serveal clicks.</li>
               <li>Implemented Word to HTML service for PDM to quickly publish online documents.</li>
-              <li>Introduced Jest for component unit tests, storybook for component management and Redux-Observable for better asynornous handling.</li>
+              <li>Introduced Jest for component unit testing, storybook for component management and Redux-Observable for better asynornous handling.</li>
             </ul>
           </section>
           <section>
             <h3>DXY.cn</h3>
             <p>October 2014 - August 2017</p>
             <p>Hangzhou, Zhejiang, China</p>
-            <blockquote cite="https://en.wikipedia.org/wiki/DXY.cn">DXY is an online community for physicians, health care professionals, pharmacies and facilities.</blockquote>
             <ul>
               <li>Led development team of three members to develop medicine database service.</li>
               <li>Migrated several large legacy codebases to React.</li>
@@ -86,8 +86,8 @@
             </ul>
           </section>
         </section>
-        <section>
-          <h2>Side Projects</h2>
+        <section class="side-project">
+          <h2>Side Project</h2>
           <section>
             <h3>Browser Opener</h3>
             <p>Browser Opener is a macOS application to help you open browsers based on URL.</p>
@@ -107,12 +107,12 @@
             <p>Bangumi List is a Japanese anime information site.</p>
             <p>Back in China, due to the fragmentation of copyrights, it was hard to check which anime is on which video site. So I created this site to help Chinese anime fans to find out where to watch their favorite anime series.</p>
             <p>This site is also my playground of front-end technologies. It has gone through a long journey: plain HTML, jQuery, Angular, React. Recently it's refactored to TypeScript and added the login system.</p>
-            <p>Bangumi List: <a href="https://bgmlist.com" target="_blank" rel="nofollow noopener noreferrer">https://bgmlist.com</a></p>
+            <p>Bangumi List <a href="https://bgmlist.com" target="_blank" rel="nofollow noopener noreferrer">https://bgmlist.com</a></p>
             <p>GitHub(v2): <a href="https://github.com/wxt2005/bangumi-list-v3" target="_blank" rel="nofollow noopener noreferrer">https://github.com/wxt2005/bangumi-list-v3</a></p>
             <p>GitHub(v3): <a href="https://github.com/wxt2005/bangumi-list" target="_blank" rel="nofollow noopener noreferrer">https://github.com/wxt2005/bangumi-list</a></p>
           </section>
         </section>
-        <section>
+        <section class="skills">
           <h2>Skills</h2>
           <ul>
             <li>JavaScript</li>
@@ -135,7 +135,7 @@
         <section>
           <h2>Education</h2>
           <ul>
-            <li>B.E. Civil Engineering -- Zhejiang Shuren University 2009-2013</li>
+            <li>B.E. Civil Engineering - Zhejiang Shuren University 2009-2013</li>
           </ul>
         </section>
       </main>
