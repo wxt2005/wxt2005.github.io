@@ -6,7 +6,7 @@
     <meta name="renderer" content="webkit">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Wang Xiaotao's Resume | Senior Frontend Engineer">
-    <meta name="keywords" content="resume, frontend">
+    <meta name="keywords" content="resume, frontend, front-end">
     <meta name="author" content="@wxt2005">
     <title>Wang Xiaotao's Resume</title>
     <link rel="stylesheet" href="./cv-eng.css">
@@ -15,7 +15,7 @@
     <div class="cv">
       <header class="title">
         <h1 class="title-main">Wang Xiaotao</h1>
-        <p class="title-sub">&lt;Senior Frontend Engineer&gt;</p>
+        <p class="title-sub">&lt;Senior Front-end Engineer&gt;</p>
       </header>
       <main>
         <section>
@@ -42,69 +42,47 @@
             <h3>Rakuten</h3>
             <p>December 2020 - Present</p>
             <p>Tokyo, Japan</p>
+            <ul>
+              <li>Develop and maintaine Golf booking service pages using Vue and Nuxt.js.</li>
+              <li>Migrate old PHP pages to new application.</li>
+              <li>Work closely with designers for design guideline and create common components.</li>
+              <li>Improve webpage accessibility and make sure all functions are keyboard navigatable.</li>
+              <li>Improve application's performance and SEO ranking.</li>
+              <li>Designed and implemented the CDN release process.</li>
+              <li>Migrated application to Kubernetes cloud and docker container.</li>
+            </ul>
           </section>
           <section>
             <h3>Cainiao Network</h3>
             <p>August 2017 - January 2020</p>
             <p>Hangzhou, Zhejiang, China</p>
             <blockquote cite="https://en.wikipedia.org/wiki/Cainiao">Cainiao Smart Logistics Network Limited is a Chinese logistics company launched by Alibaba Group.</blockquote>
-            <section>
-              <h4>Phoenix</h4>
-              <p>A massive operating management system for Cainiao's new subsidiary Danniao.</p>
-              <p>Led a team of four members to support the whole project.</p>
-              <p>Built a multi-entry web application.</p>
-              <p>Introduced React hooks for logic reusing and CSS grid for page layout.</p>
-              <p>Developed a React UI component library based on Antd. Used Storybook for UI development and documentation.</p>
-            </section>
-            <section>
-              <h4>Poststation Retail / Poststation Group-buying / Poststation Sample-sending</h4>
-              <p>Three E-commerce services for helping Cainiao poststation owners increase profit.</p>
-              <p>Built three single page applications from scratch.</p>
-              <p>Abstracted three separate parts for better maintainability: shopping, payment and order management. All services only have different shopping page, shared the same payment and order management page.</p>
-              <p>Adopted Redux-Observable for clear asynchronous action management.</p>
-              <p>Built payment-related features, introduced Jest for unit testing.</p>
-              <p>Used modular CSS to prevent class name conflict and makes styles easy to maintain.</p>
-              <p>Standardized JavaScript code style by introducing ESLint.</p>
-            </section>
-            <section>
-              <h4>Cainiao Box</h4>
-              <p>Cainiao Box is a hardware product for customers to receive packages while not at home.</p>
-              <p>Built Cainiao Box Android app from scratch, wrote it with Java.</p>
-              <p>Implemented QR scan feature on top of ZXing.</p>
-              <p>Implemented Bluetooth communication protocol between Android phone and the box device.</p>
-            </section>
-            <section>
-              <h4>Front-end infrastructure</h4>
-              <p>Maintained front-end assets publishing system.</p>
-              <p>Developed a Word-to-HTML converting service based on Pandoc.</p>
-              <p>Implemented notification feature for the cloud building process.</p>
-            </section>
+            <ul>
+              <li>Built single-page applications using React for the company's customer-oriented services.</li>
+              <li>Created team's front-end scaffold and updated it to follow industry best practices.</li>
+              <li>Designed front-end architecture and made several systems that could share the same payment process.</li>
+              <li>Migrated legacy payment service to React and released without any serious bugs.</li>
+              <li>Worked closely with designers and created UI component library.</li>
+              <li>Maintained front-end deployment system which can deploy applications by only serveal clicks.</li>
+              <li>Implemented Word to HTML service for PDM to quickly publish online documents.</li>
+              <li>Introduced Jest for component unit tests, storybook for component management and Redux-Observable for better asynornous handling.</li>
+            </ul>
           </section>
           <section>
             <h3>DXY.cn</h3>
             <p>October 2014 - August 2017</p>
             <p>Hangzhou, Zhejiang, China</p>
             <blockquote cite="https://en.wikipedia.org/wiki/DXY.cn">DXY is an online community for physicians, health care professionals, pharmacies and facilities.</blockquote>
-            <section>
-              <h4>Insight</h4>
-              <p>Insight is a medicine database targeting Chinese pharmaceutical factories. </p>
-              <p>The front-end team leader of Insight, led a team of three members.</p>
-              <p>Refactored Insight from a legacy monolithic PHP codebase to a React + Redux application, leveraging the latest tools such as Webpack.</p>
-              <p>For preserving the ability to change page layout dynamically, designed a JSON schema for the back-end to control rendering.</p>
-            </section>
-            <section>
-              <h4>DXY BBS & DXY App</h4>
-              <p>DXY BBS is the biggest online forum for medical discussion in China, and DXY App is the iOS/Android version of it.</p>
-              <p>Refactored DXY BBS from a legacy monolithic Java codebase to a modular jQuery application. Used Gulp for building and Require.js for module loading.</p>
-              <p>Implemented an editor plugin for annotating uploaded images on top of darkroomjs.</p>
-              <p>Developed and maintained all post detail pages in DXY app's webview.</p>
-              <p>Collaborated with native engineers to design JS bridge for communicating between the web page and native app.</p>
-            </section>
-            <section>
-              <h4>Front-end infrastructure</h4>
-              <p>Developed a utility for opening native Apps from mobile web pages. Made use of Custom Scheme in Android, and Universal Link in iOS.</p>
-              <p>Developed a utility for compressing images before uploading from mobile web pages, in the sake of fast uploading and bandwidth saving.</p>
-            </section>
+            <ul>
+              <li>Led development team of three members to develop medicine database service.</li>
+              <li>Migrated several large legacy codebases to React.</li>
+              <li>Designed JSON schema for backend to control rendering of part of the page.</li>
+              <li>Implemented and maintained all webview pages inside the company's mobile application.</li>
+              <li>Collaborated with mobile engineers and designed JS bridge for the communication between native app and webpage.</li>
+              <li>Created an internal library for opening native iOS or Android application from webpage.</li>
+              <li>Implemented forum editor plugin for uploading images.</li>
+              <li>Implemented image compression function before the user upload images from mobile webpages.</li>
+            </ul>
           </section>
         </section>
         <section>
