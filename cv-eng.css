@@ -31,8 +31,19 @@ a:focus {
   outline-offset: 2px;
 }
 
-h1, h2, h3, h4, h5 {
+h1 {
+  font-weight: 600;
+}
+
+h2 {
+  font-weight: 500;
+}
+
+h3 {
   font-weight: 400;
+}
+
+h1, h2, h3 {
   color: #000;
 }
 
