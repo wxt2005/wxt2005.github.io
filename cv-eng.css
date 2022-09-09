@@ -31,22 +31,6 @@ a:focus {
   outline-offset: 2px;
 }
 
-h1 {
-  font-weight: 600;
-}
-
-h2 {
-  font-weight: 500;
-}
-
-h3 {
-  font-weight: 400;
-}
-
-h1, h2, h3 {
-  color: #000;
-}
-
 header {
   margin-bottom: 20px;
 }
@@ -55,8 +39,17 @@ p {
   margin: 8px 0;
 }
 
+h1, h2, h3 {
+  color: #000;
+}
+
+h1 {
+  font-weight: 600;
+}
+
 h2 {
   font-size: 30px;
+  font-weight: 500;
   border-bottom: 2px solid #666;
   margin: 36px 0 18px;
   padding:4px 0;
@@ -64,6 +57,7 @@ h2 {
 
 h3 {
   font-size: 26px;
+  font-weight: 400;
   margin: 8px 0;
 }
 
@@ -112,6 +106,16 @@ ul li {
   margin-top: 36px;
 }
 
+.experience .duration,
+.experience .location {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+.side-project {
+  break-after: page;
+}
+
 .skills ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -145,52 +149,42 @@ footer {
 
 /*for print*/
 @media print {
-    @page  
-    { 
-        size: auto;   /* auto is the initial value */ 
+  @page { 
+    size: auto;   /* auto is the initial value */ 
+    /* this affects the margin in the printer settings */ 
+    margin: 6mm 4mm 16mm;
+  } 
 
-        /* this affects the margin in the printer settings */ 
-        margin: 4mm 4mm 16mm;
-    } 
+  html {
+    font-size: 14px;
+  }
 
-    body {
-        margin: 0;
-        padding: 0;
-    }
+  body {
+    margin: 0;
+    padding: 0;
+  }
 
-    * {
-        background: transparent !important;
-        color: #000 !important;
-    }
+  * {
+    background: transparent !important;
+    color: #000 !important;
+  }
 
-    a:link, a:visited {
-        border-bottom: 1px solid #000;
-    }
+  a:link, a:visited {
+    border-bottom: 1px solid #000;
+  }
 
-    footer {
-        display: none;
-    }
+  h2 {
+    margin: 24px 0 18px;
+    font-size: 28px;
+  }
 
-    .works h5 {
-        float: none;
-        margin-top: 0.4em;
-        margin-bottom: 0.4em;
-    }
+  dl {
+    display: grid;
+    grid-template-columns: min-content 1fr min-content 1fr;
+    row-gap: 8px;
+  }
 
-    .works h5 a {
-        border: none;
-    }
-
-    .duration {
-        display: inline;
-        margin-left: 1em;
-    }
-
-    .duration:after {
-        content: ")";
-    }
-
-    .duration:before {
-        content: "(";
-    }
+  footer {
+    display: none;
+  }
 }
