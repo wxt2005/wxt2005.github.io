@@ -73,7 +73,9 @@ dt::after {
 
 dd {
   margin-left: 1em;
+  margin-top: 4px;
   margin-bottom: 8px;
+  word-break: break-all;
 }
 
 ul li {
@@ -102,7 +104,7 @@ ul li {
 }
 
 .experience > section + section,
-.side-project > section + section {
+.side-projects > section + section {
   margin-top: 36px;
 }
 
@@ -112,13 +114,31 @@ ul li {
   margin-bottom: 0;
 }
 
-.side-project {
+.side-projects {
   break-after: page;
 }
 
 .skills ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+}
+
+.side-projects .tools {
+  padding: 0;
+  margin: 0;
+  color: #999;
+}
+
+.side-projects .tools li {
+  display: inline-block;
+}
+
+.side-projects .tools li:not(:last-of-type)::after {
+  content: ","
+}
+
+.side-projects .links {
+  grid-template-columns: max-content 1fr;
 }
 
 footer {
@@ -139,6 +159,7 @@ footer {
 
   dd {
     margin-bottom: 0;
+    margin-top: 0;
   }
 
   .box {
