@@ -109,6 +109,7 @@ ul li {
   margin-top: 36px;
 }
 
+.experience .job-title,
 .experience .duration,
 .experience .location {
   font-size: 16px;
@@ -125,10 +126,12 @@ ul li {
   display: inline-block;
 }
 
-.experience .duration {
+.experience .job-title {
+  font-size: 16px;
+  margin-bottom: 0;
+  display: inline-block;
   margin: 0 0 0 8px;
 }
-
 
 .experience .duration::after{
   content: "|";
