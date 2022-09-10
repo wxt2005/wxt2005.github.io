@@ -114,9 +114,9 @@ ul li {
   margin-bottom: 0;
 }
 
-.side-projects {
+/* .side-projects {
   break-after: page;
-}
+} */
 
 .skills ul {
   display: grid;
@@ -205,6 +205,11 @@ footer {
     display: grid;
     grid-template-columns: min-content 1fr min-content 1fr;
     row-gap: 8px;
+  }
+
+  dd {
+    margin-bottom: 0;
+    margin-top: 0;
   }
 
   footer {
