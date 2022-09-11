@@ -12,198 +12,196 @@
     <link rel="stylesheet" href="./css/resume-eng.css">
   </head>
   <body>
-    <div>
-      <div class="box">
-        <header class="title">
-          <h1 class="title-main">Wang Xiaotao</h1>
-          <p class="title-sub">&lt;Senior Front-end Engineer&gt;</p>
-        </header>
-        <div>
+    <div class="box">
+      <header class="title">
+        <h1 class="title-main">Wang Xiaotao</h1>
+        <p class="title-sub">&lt;Senior Front-end Engineer&gt;</p>
+      </header>
+      <div>
+        <section>
+          <h2>Profile</h2>
+          <dl>
+            <dt>Email</dt>
+            <dd>wxt2005@gmail.com</dd>
+            <dt>Location</dt>
+            <dd>Kanagawa, Japan</dd>
+            <dt>GitHub</dt>
+            <dd><a href="https://github.com/wxt2005" target="_blank" rel="nofollow noopener noreferrer">https://github.com/wxt2005</a></dd>
+            <dt>LinkedIn</dt>
+            <dd><a href="https://www.linkedin.com/in/wxt2005" target="_blank" rel="nofollow noopener noreferrer">https://www.linkedin.com/in/wxt2005</a></dd>
+          </dl>
+        </section>
+        <section>
+          <h2>Summary</h2>
+          <p>I'm a self-driven front-end engineer with over 7 years of experience in the development of complex web applications using React and Vue.</p>
+          <p>I have a passion for better user experience and love working with designers and discussing what's best for the user. I'm constantly chasing the new possibility of front-end technologies.</p>
+          <p>Also, I have an interest in improving development experience and performance. By making use of Node.js and server-side knowledge, I could help build better front-end infrastructure.</p>
+        </section>
+        <section class="experience">
+          <h2>Experience</h2>
           <section>
-            <h2>Profile</h2>
-            <dl>
-              <dt>Email</dt>
-              <dd>wxt2005@gmail.com</dd>
-              <dt>Location</dt>
-              <dd>Kanagawa, Japan</dd>
-              <dt>GitHub</dt>
-              <dd><a href="https://github.com/wxt2005" target="_blank" rel="nofollow noopener noreferrer">https://github.com/wxt2005</a></dd>
-              <dt>LinkedIn</dt>
-              <dd><a href="https://www.linkedin.com/in/wxt2005" target="_blank" rel="nofollow noopener noreferrer">https://www.linkedin.com/in/wxt2005</a></dd>
+            <h3>Rakuten</h3>
+            <p class="job-title">UI/UX Engineer</p>
+            <div>
+              <p class="duration">December 2020 - Present</p><p class="location">Tokyo, Japan</p>
+            </div>
+            <ul class="tools">
+              <li>Vue</li>
+              <li>Nuxt</li>
+              <li>Node.js</li>
+              <li>Docker</li>
+              <li>Kubernetes</li>
+            </ul>
+            <ul>
+              <li>Develop Rakuten GORA (Golf Booking) applications.</li>
+              <li>Migrate legacy PHP pages to the new Nuxt application.</li>
+              <li>Collaborate with designers to create design guideline and common components.</li>
+              <li>Monitor and improve page performance for better SEO ranking.</li>
+              <li>Audit page accessibility score, and ensure primary functions are keyboard accessible.</li>
+              <li>Handle operations for front-end team managed servers and the deployment scripts.</li>
+              <li>Designed and implemented the CDN release process.</li>
+              <li>Migrated Nuxt applications to Kubernetes clusters.</li>
+              <li>Improved CI/CD's performance and reduced cost by using dynamic agents on Kubernetes.</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Cainiao Network</h3>
+            <p class="job-title">Senior Front-end Developer</p>
+            <div>
+              <p class="duration">August 2017 - January 2020</p><p class="location">Hangzhou, Zhejiang, China</p>
+            </div>
+            <ul class="tools">
+              <li>React</li>
+              <li>Redux</li>
+              <li>Node.js</li>
+              <li>Docker</li>
+              <li>MongoDB</li>
+            </ul>
+            <ul>
+              <li>Built single-page applications for customer-oriented services.</li>
+              <li>Migrated legacy payment service to React and released without any serious bugs.</li>
+              <li>Introduced Jest for component unit testing, storybook for component management and Redux-Observable for better asynornous handling.</li>
+              <li>Created team's front-end scaffold and constantly updated it to follow industry best practices.</li>
+              <li>Designed and implemented an architecture that enabled several applications to share the same payment process.</li>
+              <li>Collaborated with designers and created team's UI component library.</li>
+              <li>Maintained front-end deployment system which can deploy applications by only several clicks.</li>
+              <li>Implemented Word document conversion service for internal staff to publish online documents by one click.</li>
+            </ul>
+          </section>
+          <section>
+            <h3>DXY</h3>
+            <p class="job-title">Front-end Developer</p>
+            <div>
+              <p class="duration">October 2014 - August 2017</p><p class="location">Hangzhou, Zhejiang, China</p>
+            </div>
+            <ul class="tools">
+              <li>React</li>
+              <li>Redux</li>
+              <li>jQuery</li>
+              <li>Backbone</li>
+              <li>Node.js</li>
+            </ul>
+            <ul>
+              <li>Led development team of 3 members to develop medicine database service.</li>
+              <li>Refactored 3 legacy PHP + jQuery applications to React + Redux applications.</li>
+              <li>Designed JSON schema for the server side to configure rendering of the page.</li>
+              <li>Implemented forum rich-text editor image upload plugin.</li>
+              <li>Implemented image compression function for mobile image upload.</li>
+              <li>Worked with designers, standardized and implemented the company-wise prefecture and city selector component.</li>
+              <li>Implemented and maintained all webview pages inside the company's mobile application.</li>
+              <li>Collaborated with mobile engineers and designed JS bridge for the communication between native app and webpage.</li>
+              <li>Created an internal library for opening native iOS or Android application from webpage.</li>
+              <li>Deployed company's first private npm repository for internal package sharing.</li>
+            </ul>
+          </section>
+        </section>
+        <section class="side-projects">
+          <h2>Side Projects</h2>
+          <section>
+            <h3>Browser Opener</h3>
+            <ul class="tools">
+              <li>Swift</li>
+              <li>AppKit</li>
+              <li>CoreData</li>
+            </ul>
+            <p>Browser Opener is a macOS application to help you open browsers based on URL.</p>
+            <p>As a front-end engineer, I use Chrome for debugging applications but use Safari for other kinds of stuff. It's painful to switch between browsers when opening different URLs, for example, localhost or 127.0.0.1.</p> 
+            <p>Browser Opener is able to determine which browser to open when clicking links.</p>
+            <p>It started to support browser profiles in the latest version.</p>
+            <dl class="links">
+              <dt>App Store</dt>
+              <dd><a href="https://apps.apple.com/app/browseropener/id1387480496" target="_blank" rel="nofollow noopener noreferrer">https://apps.apple.com/app/browseropener/id1387480496</a></dd>
+              <dt>Product Hunt</dt>
+              <dd><a href="https://www.producthunt.com/posts/browseropener" target="_blank" rel="nofollow noopener noreferrer">https://www.producthunt.com/posts/browseropener</a></dd>
             </dl>
           </section>
           <section>
-            <h2>Summary</h2>
-            <p>I'm a self-driven front-end engineer with over 7 years of experience in the development of complex web applications using React and Vue.</p>
-            <p>I have a passion for better user experience and love working with designers and discussing what's best for the user. I'm constantly chasing the new possibility of front-end technologies.</p>
-            <p>Also, I have an interest in improving development experience and performance. By making use of Node.js and server-side knowledge, I could help build better front-end infrastructure.</p>
+            <h3>Reading List</h3>
+            <ul class="tools">
+              <li>Swift</li>
+              <li>UIKit</li>
+              <li>Catalyst</li>
+              <li>CoreData</li>
+            </ul>
+            <p>Reading List is an application for collecting web pages for later reading.</p>
+            <p>Most RIL applications require a user account and save data to their database. Also, their iPad supports are often incomplete. For instance, none supports drag and drop back then.</p>
+            <p>So I created my alternative. It's a universal application which supports iOS, iPadOS and macOS. All data is synced to iCloud and no user account is needed.</p>
+            <dl class="links">
+              <dt>App Store</dt>
+              <dd><a href="https://apps.apple.com/app/reading-list-read-later/id1501647738?platform=iphone" target="_blank" rel="nofollow noopener noreferrer">https://apps.apple.com/app/reading-list-read-later/id1501647738</a></dd>
+            </dl>
           </section>
-          <section class="experience">
-            <h2>Experience</h2>
-            <section>
-              <h3>Rakuten</h3>
-              <p class="job-title">UI/UX Engineer</p>
-              <div>
-                <p class="duration">December 2020 - Present</p><p class="location">Tokyo, Japan</p>
-              </div>
-              <ul class="tools">
-                <li>Vue</li>
-                <li>Nuxt</li>
-                <li>Node.js</li>
-                <li>Docker</li>
-                <li>Kubernetes</li>
-              </ul>
-              <ul>
-                <li>Develop Rakuten GORA (Golf Booking) applications.</li>
-                <li>Migrate legacy PHP pages to the new Nuxt application.</li>
-                <li>Collaborate with designers to create design guideline and common components.</li>
-                <li>Monitor and improve page performance for better SEO ranking.</li>
-                <li>Audit page accessibility score, and ensure primary functions are keyboard accessible.</li>
-                <li>Handle operations for front-end team managed servers and the deployment scripts.</li>
-                <li>Designed and implemented the CDN release process.</li>
-                <li>Migrated Nuxt applications to Kubernetes clusters.</li>
-                <li>Improved CI/CD's performance and reduced cost by using dynamic agents on Kubernetes.</li>
-              </ul>
-            </section>
-            <section>
-              <h3>Cainiao Network</h3>
-              <p class="job-title">Senior Front-end Developer</p>
-              <div>
-                <p class="duration">August 2017 - January 2020</p><p class="location">Hangzhou, Zhejiang, China</p>
-              </div>
-              <ul class="tools">
-                <li>React</li>
-                <li>Redux</li>
-                <li>Node.js</li>
-                <li>Docker</li>
-                <li>MongoDB</li>
-              </ul>
-              <ul>
-                <li>Built single-page applications for customer-oriented services.</li>
-                <li>Migrated legacy payment service to React and released without any serious bugs.</li>
-                <li>Introduced Jest for component unit testing, storybook for component management and Redux-Observable for better asynornous handling.</li>
-                <li>Created team's front-end scaffold and constantly updated it to follow industry best practices.</li>
-                <li>Designed and implemented an architecture that enabled several applications to share the same payment process.</li>
-                <li>Collaborated with designers and created team's UI component library.</li>
-                <li>Maintained front-end deployment system which can deploy applications by only several clicks.</li>
-                <li>Implemented Word document conversion service for internal staff to publish online documents by one click.</li>
-              </ul>
-            </section>
-            <section>
-              <h3>DXY</h3>
-              <p class="job-title">Front-end Developer</p>
-              <div>
-                <p class="duration">October 2014 - August 2017</p><p class="location">Hangzhou, Zhejiang, China</p>
-              </div>
-              <ul class="tools">
-                <li>React</li>
-                <li>Redux</li>
-                <li>jQuery</li>
-                <li>Backbone</li>
-                <li>Node.js</li>
-              </ul>
-              <ul>
-                <li>Led development team of 3 members to develop medicine database service.</li>
-                <li>Refactored 3 legacy PHP + jQuery applications to React + Redux applications.</li>
-                <li>Designed JSON schema for the server side to configure rendering of the page.</li>
-                <li>Implemented forum rich-text editor image upload plugin.</li>
-                <li>Implemented image compression function for mobile image upload.</li>
-                <li>Worked with designers, standardized and implemented the company-wise prefecture and city selector component.</li>
-                <li>Implemented and maintained all webview pages inside the company's mobile application.</li>
-                <li>Collaborated with mobile engineers and designed JS bridge for the communication between native app and webpage.</li>
-                <li>Created an internal library for opening native iOS or Android application from webpage.</li>
-                <li>Deployed company's first private npm repository for internal package sharing.</li>
-              </ul>
-            </section>
-          </section>
-          <section class="side-projects">
-            <h2>Side Projects</h2>
-            <section>
-              <h3>Browser Opener</h3>
-              <ul class="tools">
-                <li>Swift</li>
-                <li>AppKit</li>
-                <li>CoreData</li>
-              </ul>
-              <p>Browser Opener is a macOS application to help you open browsers based on URL.</p>
-              <p>As a front-end engineer, I use Chrome for debugging applications but use Safari for other kinds of stuff. It's painful to switch between browsers when opening different URLs, for example, localhost or 127.0.0.1.</p> 
-              <p>Browser Opener is able to determine which browser to open when clicking links.</p>
-              <p>It started to support browser profiles in the latest version.</p>
-              <dl class="links">
-                <dt>App Store</dt>
-                <dd><a href="https://apps.apple.com/app/browseropener/id1387480496" target="_blank" rel="nofollow noopener noreferrer">https://apps.apple.com/app/browseropener/id1387480496</a></dd>
-                <dt>Product Hunt</dt>
-                <dd><a href="https://www.producthunt.com/posts/browseropener" target="_blank" rel="nofollow noopener noreferrer">https://www.producthunt.com/posts/browseropener</a></dd>
-              </dl>
-            </section>
-            <section>
-              <h3>Reading List</h3>
-              <ul class="tools">
-                <li>Swift</li>
-                <li>UIKit</li>
-                <li>Catalyst</li>
-                <li>CoreData</li>
-              </ul>
-              <p>Reading List is an application for collecting web pages for later reading.</p>
-              <p>Most RIL applications require a user account and save data to their database. Also, their iPad supports are often incomplete. For instance, none supports drag and drop back then.</p>
-              <p>So I created my alternative. It's a universal application which supports iOS, iPadOS and macOS. All data is synced to iCloud and no user account is needed.</p>
-              <dl class="links">
-                <dt>App Store</dt>
-                <dd><a href="https://apps.apple.com/app/reading-list-read-later/id1501647738?platform=iphone" target="_blank" rel="nofollow noopener noreferrer">https://apps.apple.com/app/reading-list-read-later/id1501647738</a></dd>
-              </dl>
-            </section>
-            <section>
-              <h3>Bangumi List</h3>
-              <ul class="tools">
-                <li>TypeScript</li>
-                <li>React</li>
-                <li>Redux</li>
-                <li>Node.js</li>
-                <li>Express</li>
-                <li>SQLite</li>
-              </ul>
-              <p>Bangumi List is a Japanese anime information site.</p>
-              <p>Back in China, due to the fragmentation of copyrights, it was hard to check which anime is available on which video site. So I created this site to help Chinese anime fans to easilly watch their favorite anime series.</p>
-              <p>This site is also my playground for front-end technologies. It has been rewritten with different frameworks: plain HTML, jQuery, Angular, and React. Recently it's refactored to using TypeScript and added the login system.</p>
-              <dl class="links">
-                <dt>Bangumi List</dt>
-                <dd><a href="https://bgmlist.com" target="_blank" rel="nofollow noopener noreferrer">https://bgmlist.com</a></dd>
-                <dt>Source Code (GitHub)</dt>
-                <dd><a href="https://github.com/wxt2005/bangumi-list-v3" target="_blank" rel="nofollow noopener noreferrer">https://github.com/wxt2005/bangumi-list-v3</a></dd>
-              </dl>
-            </section>
-          </section>
-          <section class="skills">
-            <h2>Skills</h2>
-            <ul>
-              <li>JavaScript</li>
-              <li>Semantic HTML</li>
-              <li>CSS / Less / Sass / PostCSS</li>
-              <li>React + Redux</li>
-              <li>Vue + Vuex</li>
+          <section>
+            <h3>Bangumi List</h3>
+            <ul class="tools">
+              <li>TypeScript</li>
+              <li>React</li>
+              <li>Redux</li>
               <li>Node.js</li>
+              <li>Express</li>
+              <li>SQLite</li>
             </ul>
+            <p>Bangumi List is a Japanese anime information site.</p>
+            <p>Back in China, due to the fragmentation of copyrights, it was hard to check which anime is available on which video site. So I created this site to help Chinese anime fans to easilly watch their favorite anime series.</p>
+            <p>This site is also my playground for front-end technologies. It has been rewritten with different frameworks: plain HTML, jQuery, Angular, and React. Recently it's refactored to using TypeScript and added the login system.</p>
+            <dl class="links">
+              <dt>Bangumi List</dt>
+              <dd><a href="https://bgmlist.com" target="_blank" rel="nofollow noopener noreferrer">https://bgmlist.com</a></dd>
+              <dt>Source Code (GitHub)</dt>
+              <dd><a href="https://github.com/wxt2005/bangumi-list-v3" target="_blank" rel="nofollow noopener noreferrer">https://github.com/wxt2005/bangumi-list-v3</a></dd>
+            </dl>
           </section>
-          <section>
-            <h2>Certifications</h2>
-            <ul>
-              <li>JLPT N1</li>
-              <li>TOEIC 950</li>
-              <li>Qualification Certificate of Computer and Software Technology Proficiency - Programmer</li>
-              <li>Qualification Certificate of Computer and Software Technology Proficiency - Software Design Engineer</li>
-            </ul>
-          </section>
-          <section>
-            <h2>Education</h2>
-            <ul>
-              <li>B.E. Civil Engineering - Zhejiang Shuren University 2009-2013</li>
-            </ul>
-          </section>
-        </div>
+        </section>
+        <section class="skills">
+          <h2>Skills</h2>
+          <ul>
+            <li>JavaScript</li>
+            <li>Semantic HTML</li>
+            <li>CSS / Less / Sass / PostCSS</li>
+            <li>React + Redux</li>
+            <li>Vue + Vuex</li>
+            <li>Node.js</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Certifications</h2>
+          <ul>
+            <li>JLPT N1</li>
+            <li>TOEIC 950</li>
+            <li>Qualification Certificate of Computer and Software Technology Proficiency - Programmer</li>
+            <li>Qualification Certificate of Computer and Software Technology Proficiency - Software Design Engineer</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Education</h2>
+          <ul>
+            <li>B.E. Civil Engineering - Zhejiang Shuren University 2009-2013</li>
+          </ul>
+        </section>
       </div>
-      <footer>
-        <p>&copy; 2022 Wang Xiaotao &#124; <a href="./others/wang_xiaotao_senior_front-end_engineer.pdf">Download PDF</a></p>
-      </footer>
     </div>
+    <footer>
+      <p>&copy; 2022 Wang Xiaotao &#124; <a href="./others/wang_xiaotao_senior_front-end_engineer.pdf">Download PDF</a></p>
+    </footer>
   </body>
 </html>
