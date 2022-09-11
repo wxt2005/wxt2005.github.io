@@ -229,7 +229,7 @@ footer {
   }
 
   h2 {
-    margin: 16px 0 18px;
+    margin: 24px 0 18px;
     font-size: 28px;
   }
 
@@ -251,5 +251,10 @@ footer {
   .experience > section + section,
   .side-projects > section + section {
     margin-top: 24px;
+  }
+
+  .experience .job-title {
+    display: inline-block;
+    margin: 0 0 0 8px;
   }
 }
